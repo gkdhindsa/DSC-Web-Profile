@@ -1,0 +1,62 @@
+.barlow-extramedium{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.barlow-medium{
+    font-family: 'Barlow',sans-serif;
+    font-weight: 500;
+}
+.profile-main{
+    display: flex;
+}
+.light-grey{
+    display: flex;
+    
+}
+
+.image-section{
+    height: 100vh;
+    background-color: #EEECED;
+    width: 25vw;
+    text-align: center;
+    padding: 20vh 5vh;
+    white-space: nowrap;
+}
+
+
+.member-image{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    max-width: 190px;
+    max-height: 190px;
+    margin-bottom: 5vh;
+}
+
+.icon-section{
+    height: 73vh;
+    width: 10vh;
+    margin-top: 20vh;
+    background-color: #EEECED;
+    border-radius: 0em 0.5em 0.5em 0em;
+    text-align: center;
+}
+.icon-section a{
+    color: #C4C2C2;
+}
+.sm-icons{
+   margin-top: 10vh;
+}
+.tab-icon{
+    padding: 9vh 0vh 1vh 0vh ;
+}
+.content-section{
+    padding: 10vh;
+}
+.sm-icon{
+    margin: 0 0.5em 0 0.5em;
+}
