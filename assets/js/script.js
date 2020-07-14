@@ -5,7 +5,11 @@ $(document).on('ready', function () {
     slidesToShow: 4,
     slidesToScroll: 4
   });
+  document.querySelector(".content-section").innerHTML=document.querySelector('.about').innerHTML;
+
+
 });
+
 
 function updateTab(arg){
   console.log(arg.id);
