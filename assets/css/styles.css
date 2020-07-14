@@ -1,31 +1,36 @@
-.barlow-extramedium{
+body {
+    margin: 0;
+    padding: 0;
+}
+.barlow-extramedium {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
+    opacity: 75%;
 }
 
-.barlow-medium{
-    font-family: 'Barlow',sans-serif;
+.barlow-medium {
+    font-family: 'Barlow', sans-serif;
     font-weight: 500;
-}
-.profile-main{
-    display: flex;
-}
-.light-grey{
-    display: flex;
-    
+    font-size: 2em;
 }
 
-.image-section{
+.profile-main {
+    display: flex;
+}
+
+.light-grey {
+    display: flex;
+}
+
+.image-section {
     height: 100vh;
     background-color: #EEECED;
     width: 25vw;
     text-align: center;
-    padding: 20vh 5vh;
-    white-space: nowrap;
+    padding: 20% 5%;
 }
 
-
-.member-image{
+.member-image {
     height: 15vw;
     width: 15vw;
     border-radius: 50%;
@@ -37,26 +42,106 @@
     margin-bottom: 5vh;
 }
 
-.icon-section{
+.sm-icons {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-section {
     height: 73vh;
     width: 10vh;
-    margin-top: 20vh;
+    margin-top: 14vh;
     background-color: #EEECED;
     border-radius: 0em 0.5em 0.5em 0em;
     text-align: center;
 }
-.icon-section a{
+
+.tab-icon {
+    padding: 9vh 0vh 1vh 0vh;
     color: #C4C2C2;
 }
-.sm-icons{
-   margin-top: 10vh;
+.tab-icon a:hover{
+    color: black;
 }
-.tab-icon{
-    padding: 9vh 0vh 1vh 0vh ;
-}
-.content-section{
+
+.content-section {
     padding: 10vh;
+    display: block;
 }
-.sm-icon{
-    margin: 0 0.5em 0 0.5em;
+
+/* Slick Sliders */
+
+.section-photo{
+    text-align: center;
+}
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide:hover{
+    cursor: pointer;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+
+/* Media Queries*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .sm-icons {
+        justify-content: space-between;
+    }
+}
+
+/*switched to vertical view mid-screen sizes and below*/
+@media (max-width: 768px) {
+    .light-grey{
+        height: 100vh;
+    }
+    .image-section {
+        width: 100%;
+        height: 90vh;
+        padding: 10vh 0% 0% 0%;
+    }
+
+    .profile-main {
+        display: block;
+    }
+
+    .light-grey {
+        display: block;
+    }
+
+    .icon-section {
+        display: flex;
+        background-color: #EEECED;
+        width: 100%;
+        height: 10vh;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tab-icon {
+        padding: 0;
+    }
+}
+
+.gallery, .testimonials, .achievements, .about, .experience{
+    display: none;
 }
