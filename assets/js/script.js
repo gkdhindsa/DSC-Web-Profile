@@ -1,10 +1,4 @@
 $(document).on('ready', function () {
-  $(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
-  });
   document.querySelector(".content-section").innerHTML=document.querySelector('.about').innerHTML;
 
 
@@ -12,17 +6,17 @@ $(document).on('ready', function () {
 
 
 function updateTab(arg){
-  console.log(arg.id);
   document.querySelector(".content-section").innerHTML=document.querySelector('.'+arg.id).innerHTML;
 }
 
 function updatePhoto(arg){
+  console.log(arg);
   document.querySelector('#slide-main').src=arg.src;
 }
 var slides=document.querySelectorAll("#slide");
-
 slides.forEach(slide => {
   slide.addEventListener('click', function(){
+    console.log(slide);
     updatePhoto(slide)
   });
     

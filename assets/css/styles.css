@@ -1,14 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
-.barlow-extramedium, p {
+
+.barlow-extramedium,
+p {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     opacity: 75%;
 }
 
-.barlow-medium, h1 {
+.barlow-medium,
+h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
     font-size: 2em;
@@ -61,7 +68,8 @@ body {
     padding: 9vh 0vh 1vh 0vh;
     color: #C4C2C2;
 }
-.tab-icon a:hover{
+
+.tab-icon a:hover {
     color: black;
 }
 
@@ -72,34 +80,35 @@ body {
 
 /* Slick Sliders */
 
-.section-photo{
+.section-photo {
     text-align: center;
 }
-.slider {
-    width: 50%;
-    margin: 100px auto;
+
+.gallery-photo{
+    width: 90%
+}
+.image-card{
+    text-align: center;
+}
+.carousel-item .row{
+    justify-content: center;
 }
 
-.slick-slide {
-    margin: 0px 20px;
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
-.slick-slide:hover{
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#slide:hover{
     cursor: pointer;
 }
-
-.slick-slide img {
-    width: 100%;
+.carousel{
+    margin-top: 10vh;
 }
-
-.slick-prev:before,
-.slick-next:before {
-    color: black;
-}
-
-.slick-slide {
-    transition: all ease-in-out .3s;
-}
-
 /* Media Queries*/
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -110,9 +119,10 @@ body {
 
 /*switched to vertical view mid-screen sizes and below*/
 @media (max-width: 768px) {
-    .light-grey{
+    .light-grey {
         height: 100vh;
     }
+
     .image-section {
         width: 100%;
         height: 90vh;
@@ -142,6 +152,10 @@ body {
     }
 }
 
-.gallery, .testimonials, .achievements, .about, .experience{
+.gallery,
+.testimonials,
+.achievements,
+.about,
+.experience {
     display: none;
 }
