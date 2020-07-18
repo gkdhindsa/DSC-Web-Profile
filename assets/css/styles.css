@@ -338,12 +338,14 @@ h2 {
 }
 
 .block {
-    width: 120px;
-    height: 70px;
+    width: 170px;
+    height: 100px;
 
 }
 
-
+.carousel{
+    width: 100%;
+}
 
 .carousel-control.left {
     margin-left: -25px;
@@ -355,3 +357,7 @@ h2 {
 .carousel{
     margin-top: 10vh;
 }
+.item{
+    margin: 0em 10px ;
+}
+
