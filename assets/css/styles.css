@@ -119,9 +119,7 @@ h2 {
 #slide:hover{
     cursor: pointer;
 }
-.carousel{
-    margin-top: 10vh;
-}
+
 */
 /* Media Queries*/
 
@@ -353,4 +351,7 @@ h2 {
 
 .carousel-control.right {
     margin-right: -25px;
+}
+.carousel{
+    margin-top: 10vh;
 }
