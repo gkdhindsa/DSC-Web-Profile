@@ -2,17 +2,27 @@ function updateTab(arg){
   document.querySelector(".content-section").innerHTML=document.querySelector('.'+arg.id).innerHTML;
 }
 
-function updatePhoto(arg){
-  console.log(arg);
-  document.querySelector('#slide-main').src=arg.src;
-}
-
-var tabs=document.querySelectorAll(".tab-icon");
+let tabs=document.querySelectorAll(".tab-icon");
 tabs.forEach(tab => {
     tab.addEventListener('click', function(){
       updateTab(tab)
     });
 });
+
+function updatePhoto(arg){
+	$('#slide-main').src=arg.src;
+}
+
+let slides=document.querySelectorAll('#slide');
+console.log(slides);
+
+
+slides.forEach(slide => {
+	slide.addEventListener('click', function(){
+		alert('clicked');
+	})
+})
+
 
 $('.carousel[data-type="multi"] .item').each(function() {
 	var next = $(this).next();
@@ -31,12 +41,3 @@ $('.carousel[data-type="multi"] .item').each(function() {
 	}
 });
 
-
-
-var slides=document.querySelectorAll("#slide");
-slides.forEach(slide => {
-    slide.addEventListener('click', function(){
-      console.log(slide);
-      updatePhoto(slide);
-    });
-});
