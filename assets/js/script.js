@@ -8,7 +8,9 @@ function updateTab(arg) {
 let tabs = document.querySelectorAll(".tab-icon");
 tabs.forEach(tab => {
 	tab.addEventListener('click', function () {
+		
 		document.querySelector(".selected").innerHTML = "";
+		
 		let div = tab.cloneNode(true);
 		document.querySelector(".selected").appendChild(div);
 		document.querySelector(".selected").id = tab.id;
@@ -16,6 +18,7 @@ tabs.forEach(tab => {
 			tabs[i].classList.remove("hide")
 		}
 		tab.classList.add("hide")
+		
 		document.querySelector(".selected > div").classList.remove("hide")
 		updateTab(tab.id)
 	});

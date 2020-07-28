@@ -12,12 +12,21 @@ p {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
     opacity: 75%;
+    font-size: 1.5em;
+    line-height: 1.5;
 }
-
 .barlow-medium,
 h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
+    
+}
+h1{
+    font-size: 2.5em;
+    line-height: 2;
+}
+
+.barlow-medium{
     font-size: 2em;
 }
 
@@ -81,6 +90,7 @@ h2 {
 .tab-icon{
     transition: all 1s ease-in-out;
 }
+
 .hid{
     display: none;
 }
@@ -111,7 +121,7 @@ h2 {
 }
 
 .content-section {
-    padding: 20vh 10vh;
+    padding: 5vh 15vh;
     display: block;
     
     justify-content: center;
@@ -374,6 +384,12 @@ h2 {
 }
 #slide-main{
     max-width: 90%;
-    height: 50%;
+    height: 70%;
+}
+.para-line p{
+    margin: 0;
+}
+.para-line{
+    margin-bottom: 1.5em;
 }
 
