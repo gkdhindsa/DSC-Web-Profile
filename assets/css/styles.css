@@ -91,16 +91,6 @@ h2 {
     transition: all 1s ease-in-out;
 }
 
-.hid{
-    display: none;
-}
-.selected{
-    color: black;
-}
-.selected > div > a{
-    color: black;
-    /* background-color: black; */
-}
 .content-section > div{
     display: none;
 }
@@ -114,10 +104,13 @@ h2 {
 .tab-icon a {
     color: #C4C2C2;
 }
-
 .tab-icon a:hover {
     color: black;
     cursor: pointer;
+}
+
+.highlight{
+    color: black;
 }
 
 .content-section {
@@ -384,7 +377,8 @@ h2 {
 }
 #slide-main{
     max-width: 90%;
-    height: 70%;
+    max-height: 70%;
+    height: ;
 }
 .para-line p{
     margin: 0;

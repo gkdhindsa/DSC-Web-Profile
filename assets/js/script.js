@@ -3,23 +3,13 @@ function updateTab(arg) {
 		ele.classList.remove("show")
 	})
 	document.querySelector(`.${arg}`).classList.add("show")
+	
 }
 
 let tabs = document.querySelectorAll(".tab-icon");
 tabs.forEach(tab => {
 	tab.addEventListener('click', function () {
-		
-		document.querySelector(".selected").innerHTML = "";
-		
-		let div = tab.cloneNode(true);
-		document.querySelector(".selected").appendChild(div);
-		document.querySelector(".selected").id = tab.id;
-		for (let i = 0; i < tabs.length; i++) {
-			tabs[i].classList.remove("hide")
-		}
-		tab.classList.add("hide")
-		
-		document.querySelector(".selected > div").classList.remove("hide")
+		tab.children[0].classList.add('highlight')
 		updateTab(tab.id)
 	});
 });
@@ -30,11 +20,6 @@ function updatePhoto(arg) {
 }
 
 let slides = document.querySelectorAll('.xyz');
-console.log(slides)
-
-/*slides[1].addEventListener("click", () => {
-	console.log("okay")
-})*/
 
 slides.forEach(slide => {
 	slide.addEventListener('click', function () {
