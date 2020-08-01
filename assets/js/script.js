@@ -9,7 +9,10 @@ function updateTab(arg) {
 let tabs = document.querySelectorAll(".tab-icon");
 tabs.forEach(tab => {
 	tab.addEventListener('click', function () {
-		tab.children[0].classList.add('highlight')
+		for (let i = 0; i < tabs.length; i++) {
+			tabs[i].classList.remove("selected")
+		}
+		tab.classList.add("selected")
 		updateTab(tab.id)
 	});
 });

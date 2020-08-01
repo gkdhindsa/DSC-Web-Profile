@@ -386,4 +386,6 @@ h2 {
 .para-line{
     margin-bottom: 1.5em;
 }
-
+.selected a{
+    color: black
+}
