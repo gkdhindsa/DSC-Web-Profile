@@ -364,13 +364,9 @@ h2 {
     }
 }
 
-.block {
-    width: 306px;
-    height: 230px;
-}
-
 #slider-main {
     margin: auto;
+    min-width: 200px;
 }
 
 .car-img {
