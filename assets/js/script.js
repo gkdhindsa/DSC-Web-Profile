@@ -1,3 +1,4 @@
+/*   to diplay the selected tab  */
 function updateTab(arg) {
 	document.querySelectorAll(".content-section > div").forEach(ele => {
 		ele.classList.remove("show")
@@ -6,6 +7,7 @@ function updateTab(arg) {
 
 }
 
+/*Event Listener for the tabs selection*/
 let tabs = document.querySelectorAll(".tab-icon");
 tabs.forEach(tab => {
 	tab.addEventListener('click', function () {
@@ -17,6 +19,7 @@ tabs.forEach(tab => {
 	});
 });
 
+/* Carousel */
 $('.carousel[data-type="multi"] .item').each(function () {
 	var next = $(this).next();
 	if (!next.length) {
