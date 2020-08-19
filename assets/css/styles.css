@@ -28,6 +28,7 @@ h1 {
 /*Outermost div*/
 .profile-main {
     display: flex;
+    height: 100vh;
 }
 
 .light-grey {
@@ -182,7 +183,7 @@ h1 {
     }
     .image-section {
         width: 100%;
-        min-height: 80vh;
+        height: 80vh;
         padding: 10% 0% 0% 0%;
     }
     .profile-main {
@@ -197,7 +198,7 @@ h1 {
         display: flex;
         background-color: #EEECED;
         width: 100%;
-        min-height: 20vh;
+        height: 20vh;
         margin: 0;
         flex-direction: row;
         align-items: center;
