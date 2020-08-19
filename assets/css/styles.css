@@ -235,6 +235,9 @@ h1 {
     .active>div:first-child+div {
         display: block;
     }
+    .content-section{
+        padding: 10vh 5vh;
+    }
 }
 
 /*md*/
