@@ -103,10 +103,10 @@ h1 {
 
 .content-section {
     padding: 5vh 15vh;
-    display: block;
+    
     justify-content: center;
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
 }
 /*inner elemnts of content-section*/
 
@@ -185,8 +185,8 @@ h1 {
     }
     .image-section {
         width: 100%;
-        min-height: 80vh;
-        padding: 5% 0% 0% 0%;
+        min-height: 90vh;
+        padding: 10vh 0% 0% 0;
     }
     .profile-main {
         display: block;
@@ -194,20 +194,28 @@ h1 {
     }
 
     .content-section {
-        padding: 10vh;
+        padding: 5vh;
     }
-
+    .sm-icons{
+        padding-bottom: 10vh;
+    }
     .icon-section {
         display: flex;
         background-color: #EEECED;
         width: 100%;
-        max-height: 20vh;
-        margin: 0;
+        max-height: 10vh;
         flex-direction: row;
+        margin: 0;
         align-items: center;
+        z-index: 99;
     }
+    
 }
-
+/*to fix position on scroll*/
+.fix-icon-positon{
+    position: fixed;
+    margin-top: -90vh;
+}
 /*xs*/
 
 /*sm*/

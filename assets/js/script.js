@@ -1,10 +1,24 @@
+let icons=document.querySelector('.icon-section');
+document.body.addEventListener('scroll',()=>{
+	if(document.documentElement.scrollTop> window.innerHeight*0.9 || document.body.scrollTop> window.innerHeight*0.9)
+		{
+		icons.classList.add('fix-icon-positon')
+		document.querySelector('.content-section').style.marginTop="10vh"
+	}
+	else
+	{icons.classList.remove('fix-icon-positon')
+	document.querySelector('.content-section').style.marginTop="0"
+}
+  })
 /*   to diplay the selected tab  */
 function updateTab(arg) {
 	document.querySelectorAll(".content-section > div").forEach(ele => {
 		ele.classList.remove("show")
 	})
 	document.querySelector(`.${arg}`).classList.add("show")
-
+	
+	
+	
 }
 
 /*Event Listener for the tabs selection*/
@@ -16,6 +30,7 @@ tabs.forEach(tab => {
 		}
 		tab.classList.add("selected")
 		updateTab(tab.id)
+		icons.scrollIntoView();
 	});
 });
 
@@ -40,3 +55,5 @@ $('.carousel[data-type="multi"] .item').each(function () {
 $('.car-img').click(function () {
 	$('#slider-main').attr('src', $(this).attr("src"));
 });
+
+
