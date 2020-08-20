@@ -3,11 +3,9 @@ document.body.addEventListener('scroll',()=>{
 	if(document.documentElement.scrollTop> window.innerHeight*0.9 || document.body.scrollTop> window.innerHeight*0.9)
 		{
 		icons.classList.add('fix-icon-positon')
-		document.querySelector('.content-section').style.marginTop="10vh"
 	}
 	else
 	{icons.classList.remove('fix-icon-positon')
-	document.querySelector('.content-section').style.marginTop="0"
 }
   })
 /*   to diplay the selected tab  */
