@@ -102,7 +102,7 @@ h1 {
 
 
 .content-section {
-    padding: 5vh 15vh;
+    padding: 10vh 15vh;
     
     justify-content: center;
     width: 100%;
@@ -194,7 +194,7 @@ h1 {
     }
 
     .content-section {
-        padding: 5vh;
+        padding: 10vh;
     }
     .sm-icons{
         padding-bottom: 10vh;
