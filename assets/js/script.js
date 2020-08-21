@@ -32,6 +32,19 @@ tabs.forEach(tab => {
 	});
 });
 
+
+/*js for icon updation*/ 
+/*
+let sm_icons=document.querySelectorAll(".sm-icon, .small-icon");
+console.log(sm_icons)
+sm_icons.forEach( icon => {
+	let str=icon.src;
+	icon.src=str.slice(0, str.length-4)+"-dark.svg"
+})
+*/
+
+
+
 /* Carousel */
 $('.carousel[data-type="multi"] .item').each(function () {
 	var next = $(this).next();
@@ -53,5 +66,7 @@ $('.carousel[data-type="multi"] .item').each(function () {
 $('.car-img').click(function () {
 	$('#slider-main').attr('src', $(this).attr("src"));
 });
+
+
 
 
