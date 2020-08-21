@@ -15,9 +15,11 @@ body {
 /* Designation and paragraphs */
 p,h2 {
     font-weight: 400;
-    opacity: 75%;
     font-size: 1.5em;
     line-height: 1.5;
+}
+.trans-text{
+    opacity: 75%;
 }
 /*Member's name*/
 h1 {
@@ -59,6 +61,7 @@ h1 {
     min-height: 150px;
     max-width: 190px;
     max-height: 190px;
+    object-fit: cover;
 }
 /*targets name and designation*/
 .member-text {
@@ -69,6 +72,20 @@ h1 {
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
+    
+}
+.sm-icon{
+    height: 3vw;
+    width: 3vw;
+    min-width: 50px;
+    min-height: 50px;
+}
+.sm-icon:hover{
+    cursor: pointer;
+}
+.name-align{
+    padding-left: 75%;
+    white-space: inherit;
 }
 
 /* >1024px */
@@ -82,22 +99,25 @@ h1 {
     text-align: center;
     flex-direction: column;
     column-fill: balance;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.small-icon{
+    opacity: 20%;
+    height: 1.5vw;
+    width: 1.5vw;
+    min-width: 15px;
+    min-height: 15px;
 }
 
 /*inner elements of navigation icons section*/
 
-.tab-icon a {
-    color: #C4C2C2;
-}
 
-.tab-icon a:hover {
-    color: black;
+.tab-icon a img:hover {
     cursor: pointer;
 }
 
-.selected a {
-    color: black
+.selected a img {
+    opacity: 100%;
 } /*to highlight a tab when selected*/
 
 
@@ -148,7 +168,7 @@ h1 {
 
 .carousel-control>a>span {
     color: white;
-    font-size: 29px !important;
+    font-size: 29x !important;
 }
 
 .carousel-col {
@@ -314,3 +334,20 @@ h1 {
         display: block;
     }
 }
+
+
+/*Dark Mode*/
+
+.image-section-dark, .icon-section-dark{
+    background-color: #141414;
+    color: white;
+}
+.light-grey-dark, .content-section-dark{
+    color: white;
+    background-color: #202020;
+}
+
+.trans-text-dark{
+    opacity: 100%;
+}
+

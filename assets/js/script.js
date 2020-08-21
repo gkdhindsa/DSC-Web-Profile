@@ -28,7 +28,7 @@ tabs.forEach(tab => {
 		}
 		tab.classList.add("selected")
 		updateTab(tab.id)
-		icons.scrollIntoView();
+		icons.scrollIntoView({behavior: 'smooth' });
 	});
 });
 
