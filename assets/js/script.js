@@ -1,3 +1,5 @@
+
+
 let icons=document.querySelector('.icon-section');
 document.body.addEventListener('scroll',()=>{
 	if(document.documentElement.scrollTop> window.innerHeight*0.9 || document.body.scrollTop> window.innerHeight*0.9)
@@ -33,15 +35,7 @@ tabs.forEach(tab => {
 });
 
 
-/*js for icon updation*/ 
-/*
-let sm_icons=document.querySelectorAll(".sm-icon, .small-icon");
-console.log(sm_icons)
-sm_icons.forEach( icon => {
-	let str=icon.src;
-	icon.src=str.slice(0, str.length-4)+"-dark.svg"
-})
-*/
+
 
 
 
@@ -66,6 +60,39 @@ $('.carousel[data-type="multi"] .item').each(function () {
 $('.car-img').click(function () {
 	$('#slider-main').attr('src', $(this).attr("src"));
 });
+
+
+
+
+/*Uncomment the code below to view it in dark mode*/
+
+
+/*
+let classes=['image-section', 'light-grey', 'content-section', 'trans-text', 'icon-section']
+
+function myFunction(){
+	
+	classes.forEach( ele => {
+		let them = document.querySelectorAll('.'+ ele)
+		console.log(ele)
+		them.forEach( it => {
+			
+			it.classList.toggle(ele+"-dark")
+			
+		})
+	})
+}
+myFunction()
+
+
+
+let sm_icons=document.querySelectorAll(".sm-icon, .small-icon");
+console.log(sm_icons)
+sm_icons.forEach( icon => {
+	let str=icon.src;
+	icon.src=str.slice(0, str.length-4)+"-dark.svg"
+})
+*/
 
 
 
