@@ -67,11 +67,10 @@ $('.car-img').click(function () {
 /*Uncomment the code below to view it in dark mode*/
 
 
-/*
+
 let classes=['image-section', 'light-grey', 'content-section', 'trans-text', 'icon-section']
 
-function myFunction(){
-	
+function toggle(){
 	classes.forEach( ele => {
 		let them = document.querySelectorAll('.'+ ele)
 		console.log(ele)
@@ -81,19 +80,23 @@ function myFunction(){
 			
 		})
 	})
-}
-myFunction()
-
-
-
+	
 let sm_icons=document.querySelectorAll(".sm-icon, .small-icon");
-console.log(sm_icons)
-sm_icons.forEach( icon => {
-	let str=icon.src;
-	icon.src=str.slice(0, str.length-4)+"-dark.svg"
-})
-*/
+let s=(sm_icons[0].src)
+if(s.substring(s.length-9, s.length)=='-dark.svg')
+{
+	sm_icons.forEach( icon => {
+		let str=icon.src;
+		icon.src=str.slice(0, str.length-9)+".svg"
+	})
+	
+}
+else{
+	sm_icons.forEach( icon => {
+		let str=icon.src;
+		icon.src=str.slice(0, str.length-4)+"-dark.svg"
+	})
+}
+}
 
-
-
-
+toggle()
